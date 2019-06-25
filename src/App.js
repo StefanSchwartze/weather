@@ -20,6 +20,7 @@ class App extends React.Component {
     });
   }
   render() {
+    this.state.list.sort((a, b) => a.dt > b.dt ? 1 : -1);
     return <ol>{this.state.list.map((data) => <Weather {...data}></Weather>)}</ol>;
   }
 }
