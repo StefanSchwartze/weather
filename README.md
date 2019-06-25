@@ -5,13 +5,19 @@
 Unter `src/data/forecast.json` findest du ein JSON-File mit Wetterdaten für eine Voraussage von 4 Tagen.
 Lade diese Wetterdaten asynchron in der App.js Komponente und rendere die Beschreibung, die Temperatur sowie das zugehörige Datum (zu finden unter `item.weather[0].main`, `item.dt_text` und `item.main.temp`) in einer einfachen Liste.
 
+### Kommentar Tibor: Die forecast.json vielleicht in 'public' verschieben sodass es einfach ist, die per http://localhost:3000/forecast.json zu laden.
+
 ## Aufgabe 2
 
 Sortiere die Daten nach Timestamp - relevante Property hierzu ist `item.dt`.
 
+### Kommentar Tibor: Die Daten vorher in eine zufaellige Reihenfolge bringen.
+
 ## Aufgabe 3
 
 Zeige für jedes Wetter das entsprechende Icon an - die Icons findest du unter `src/icons/*.svg`. Den Name des Icons findest du in den Daten unter `item.weather[0].icon`.
+
+### Kommentar Tibor: Die Icons vielleicht auch in 'public/icons' verschieben.
 
 ## Aufgabe 4
 
