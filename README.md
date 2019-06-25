@@ -1,3 +1,45 @@
+# Coding Challenge
+
+## Aufgabe 1
+
+Unter `src/data/forecast.json` findest du ein JSON-File mit Wetterdaten für eine Voraussage von 4 Tagen.
+Lade diese Wetterdaten asynchron in der App.js Komponente und rendere die Beschreibung, die Temperatur sowie das zugehörige Datum (zu finden unter `item.weather[0].main`, `item.dt_text` und `item.main.temp`) in einer einfachen Liste.
+
+## Aufgabe 2
+
+Sortiere die Daten nach Timestamp - relevante Property hierzu ist `item.dt`.
+
+## Aufgabe 3
+
+Zeige für jedes Wetter das entsprechende Icon an - die Icons findest du unter `src/icons/*.svg`. Den Name des Icons findest du in den Daten unter `item.weather[0].icon`.
+
+## Aufgabe 4
+
+Grundsätzlich sollen in der Liste pro Zeitpunkt nur Uhrzeit, Temperatur und Wetter-Icon angezeigt werden. Da es aber noch deutlich mehr Daten gibt, die angezeigt werden sollen, soll es möglich sein, bei einem Klick auf ein Wetter-Icon mehr Details darunter anzuzeigen. Wichtig sind dabei:
+- Luftfeuchtigkeit
+- Luftdruck
+- Min. Temperatur
+- Max. Temperatur
+
+##  Aufgabe 5
+
+Erstelle eine Komponente mit Radio-Buttons, die es ermöglicht, die Liste nach verschiedenen Kriterien zu filtern. Kriterien:
+- Wann wird es sonnig?
+- Wann brauche ich einen Regenschirm? 
+
+## Hinweise
+
+Wichtig bei der Umsetzung sind vor allem:
+
+- Einfachheit (keep it simple, kein Over-engineering)
+- Modularität / Wiederverwendbarkeit / Wartbarkeit
+- Es ist die neueste React-Version installiert - nutze die Vorteile falls nötig :-)
+
+Das CSS kann erstmal außer acht gelassen werden, Fokus bei der Aufgabe sind JavaScript und React.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
